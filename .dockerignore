@@ -1,0 +1,9 @@
+.git
+.dockerignore
+.tox
+.cache
+.coverage
+*.pyc
+*.swp
+__pycache__
+env/
