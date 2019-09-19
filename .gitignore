@@ -17,7 +17,7 @@ nosetests.xml
 .mr.developer.cfg
 .project
 .pydevproject
-
+src/.env
 .cache
 .idea
 statics_collected

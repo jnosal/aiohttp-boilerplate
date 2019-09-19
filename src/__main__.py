@@ -1,5 +1,7 @@
 from aiohttp import web
-from .app import init_app
+
+from . import settings
+from src.app import init_app
 
 
 async def create_app():
@@ -15,12 +17,11 @@ def main():
         Standalone server startup script
     """
     app = init_app()
-    app_settings = app['config']['app']
 
     web.run_app(
         app,
-        host=app_settings['host'],
-        port=app_settings['port'],
+        host=settings.HOST,
+        port=settings.PORT,
     )
 
 
